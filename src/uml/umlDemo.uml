@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="umlDemo">
+  <packagedElement xmi:type="uml:Package" xmi:id="_cg4MkCR_Eei1FsIZO0Q7nw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_cg4MkSR_Eei1FsIZO0Q7nw" name="util"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fta7ECwUEeiD-NLdcNsmKw" name="lesson8">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftbiICwUEeiD-NLdcNsmKw" name="Context">
+      <ownedAttribute xmi:id="_fvmsYCwUEeiD-NLdcNsmKw" name="map" visibility="private" type="_fvmFUCwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fvohkSwUEeiD-NLdcNsmKw" name="assign" visibility="public">
+        <ownedParameter xmi:id="_fvohkiwUEeiD-NLdcNsmKw" name="var" type="_ftksECwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fvohkywUEeiD-NLdcNsmKw" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fvpvsCwUEeiD-NLdcNsmKw" name="lookup" visibility="public">
+        <ownedParameter xmi:id="_fvpvsSwUEeiD-NLdcNsmKw" name="var" type="_ftksECwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fvpvsiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftiP0CwUEeiD-NLdcNsmKw" name="Not" clientDependency="_fvsL8CwUEeiD-NLdcNsmKw">
+      <ownedAttribute xmi:id="_fvszACwUEeiD-NLdcNsmKw" name="exp" visibility="private" type="_ftkFACwUEeiD-NLdcNsmKw" association="_fxj0MCwUEeiD-NLdcNsmKw"/>
+      <interfaceRealization xmi:id="_fvsL8CwUEeiD-NLdcNsmKw" name="Expression" supplier="_ftkFACwUEeiD-NLdcNsmKw" client="_ftiP0CwUEeiD-NLdcNsmKw" contract="_ftkFACwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fvvPQCwUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fvvPQSwUEeiD-NLdcNsmKw" name="obj" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fvvPQiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fvwdYCwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fvwdYSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fvxEcCwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fvxEcSwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fvxEciwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fvySkCwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fvySkSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftjd8CwUEeiD-NLdcNsmKw" name="Constant" clientDependency="_fvzgsCwUEeiD-NLdcNsmKw">
+      <ownedAttribute xmi:id="_fv0u0CwUEeiD-NLdcNsmKw" name="value" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_fvzgsCwUEeiD-NLdcNsmKw" name="Expression" supplier="_ftkFACwUEeiD-NLdcNsmKw" client="_ftjd8CwUEeiD-NLdcNsmKw" contract="_ftkFACwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fv7cgCwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fv7cgSwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fv7cgiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fv_t8CwUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fv_t8SwUEeiD-NLdcNsmKw" name="o" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fv_t8iwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwAVACwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fwAVASwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwBjICwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fwBjISwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ftkFACwUEeiD-NLdcNsmKw" name="Expression">
+      <ownedOperation xmi:id="_fwCxQCwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fwCxQSwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwCxQiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwCxQywUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fwCxRCwUEeiD-NLdcNsmKw" name="o" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwCxRSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwCxRiwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fwCxRywUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwDYUCwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fwDYUSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftksECwUEeiD-NLdcNsmKw" name="Variable" clientDependency="_fwDYUiwUEeiD-NLdcNsmKw">
+      <ownedAttribute xmi:id="_fwD_YCwUEeiD-NLdcNsmKw" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_fwDYUiwUEeiD-NLdcNsmKw" name="Expression" supplier="_ftkFACwUEeiD-NLdcNsmKw" client="_ftksECwUEeiD-NLdcNsmKw" contract="_ftkFACwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fwFNgCwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fwFNgSwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwFNgiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwF0kCwUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fwGboCwUEeiD-NLdcNsmKw" name="o" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwGboSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwHCsCwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fwHCsSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwIQ0CwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fwIQ0SwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftlTICwUEeiD-NLdcNsmKw" name="Or" clientDependency="_fwI34CwUEeiD-NLdcNsmKw">
+      <ownedAttribute xmi:id="_fwKGACwUEeiD-NLdcNsmKw" name="left" visibility="private" type="_ftkFACwUEeiD-NLdcNsmKw" association="_fxkbQSwUEeiD-NLdcNsmKw"/>
+      <ownedAttribute xmi:id="_fwLUICwUEeiD-NLdcNsmKw" name="right" visibility="private" type="_ftkFACwUEeiD-NLdcNsmKw" association="_fxkbQywUEeiD-NLdcNsmKw"/>
+      <interfaceRealization xmi:id="_fwI34CwUEeiD-NLdcNsmKw" name="Expression" supplier="_ftkFACwUEeiD-NLdcNsmKw" client="_ftlTICwUEeiD-NLdcNsmKw" contract="_ftkFACwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fwMiQCwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fwMiQSwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwMiQiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwNwYCwUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fwNwYSwUEeiD-NLdcNsmKw" name="o" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwNwYiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwOXcCwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fwOXcSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwPlkCwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fwPlkSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftl6MCwUEeiD-NLdcNsmKw" name="And" clientDependency="_fwQMoCwUEeiD-NLdcNsmKw">
+      <ownedAttribute xmi:id="_fwQzsCwUEeiD-NLdcNsmKw" name="left" visibility="private" type="_ftkFACwUEeiD-NLdcNsmKw" association="_fxkbRSwUEeiD-NLdcNsmKw"/>
+      <ownedAttribute xmi:id="_fwSo4CwUEeiD-NLdcNsmKw" name="right" visibility="private" type="_ftkFACwUEeiD-NLdcNsmKw" association="_fxkbRywUEeiD-NLdcNsmKw"/>
+      <interfaceRealization xmi:id="_fwQMoCwUEeiD-NLdcNsmKw" name="Expression" supplier="_ftkFACwUEeiD-NLdcNsmKw" client="_ftl6MCwUEeiD-NLdcNsmKw" contract="_ftkFACwUEeiD-NLdcNsmKw"/>
+      <ownedOperation xmi:id="_fwT3ACwUEeiD-NLdcNsmKw" name="interpret" visibility="public">
+        <ownedParameter xmi:id="_fwT3ASwUEeiD-NLdcNsmKw" name="ctx" type="_ftbiICwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwT3AiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwUeECwUEeiD-NLdcNsmKw" name="equals" visibility="public">
+        <ownedParameter xmi:id="_fwUeESwUEeiD-NLdcNsmKw" name="o" type="_fvuoMCwUEeiD-NLdcNsmKw"/>
+        <ownedParameter xmi:id="_fwUeEiwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwVsMCwUEeiD-NLdcNsmKw" name="hashCode" visibility="public">
+        <ownedParameter xmi:id="_fwVsMSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fwWTQCwUEeiD-NLdcNsmKw" name="toString" visibility="public">
+        <ownedParameter xmi:id="_fwWTQSwUEeiD-NLdcNsmKw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxj0MCwUEeiD-NLdcNsmKw" memberEnd="_fvszACwUEeiD-NLdcNsmKw _fxkbQCwUEeiD-NLdcNsmKw">
+      <ownedEnd xmi:id="_fxkbQCwUEeiD-NLdcNsmKw" name="Not" type="_ftiP0CwUEeiD-NLdcNsmKw" association="_fxj0MCwUEeiD-NLdcNsmKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxkbQSwUEeiD-NLdcNsmKw" memberEnd="_fwKGACwUEeiD-NLdcNsmKw _fxkbQiwUEeiD-NLdcNsmKw">
+      <ownedEnd xmi:id="_fxkbQiwUEeiD-NLdcNsmKw" name="Or" type="_ftlTICwUEeiD-NLdcNsmKw" association="_fxkbQSwUEeiD-NLdcNsmKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxkbQywUEeiD-NLdcNsmKw" memberEnd="_fwLUICwUEeiD-NLdcNsmKw _fxkbRCwUEeiD-NLdcNsmKw">
+      <ownedEnd xmi:id="_fxkbRCwUEeiD-NLdcNsmKw" name="Or" type="_ftlTICwUEeiD-NLdcNsmKw" association="_fxkbQywUEeiD-NLdcNsmKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxkbRSwUEeiD-NLdcNsmKw" memberEnd="_fwQzsCwUEeiD-NLdcNsmKw _fxkbRiwUEeiD-NLdcNsmKw">
+      <ownedEnd xmi:id="_fxkbRiwUEeiD-NLdcNsmKw" name="And" type="_ftl6MCwUEeiD-NLdcNsmKw" association="_fxkbRSwUEeiD-NLdcNsmKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fxkbRywUEeiD-NLdcNsmKw" memberEnd="_fwSo4CwUEeiD-NLdcNsmKw _fxkbSCwUEeiD-NLdcNsmKw">
+      <ownedEnd xmi:id="_fxkbSCwUEeiD-NLdcNsmKw" name="And" type="_ftl6MCwUEeiD-NLdcNsmKw" association="_fxkbRywUEeiD-NLdcNsmKw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_fvmFUCwUEeiD-NLdcNsmKw" name="Map&lt;Variable,Boolean>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_fvuoMCwUEeiD-NLdcNsmKw" name="Object"/>
+</uml:Model>
